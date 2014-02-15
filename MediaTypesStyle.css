@@ -1,0 +1,287 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #70538e;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+h4::-moz-selection,
+h5::-moz-selection,
+h6::-moz-selection {
+  color: #FFF;
+  background: #70538E;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+  color: #FFF;
+  background: #70538E;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18pt;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 12pt;
+  margin-left: -10px;
+}
+
+h3, h4, h5, h6 {
+  font-size: 10pt;
+  margin-left: -10px;
+}
+
+h3, h3 a {
+  color: #896AA6;
+}
+
+a {
+  color: #2C57A5;
+}
+
+a:hover {
+  color: #FFF;
+  background: #2C57A5;
+  text-decoration: none;
+}
+
+.toc {
+}
+
+.toc ul {
+  list-style-type: square;
+  margin: 0;
+  padding: 0;
+  margin-left: 1.5em;
+}
+
+.toc li.horz > ul {
+  list-style-type: none;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.toc li.horz > ul > li {
+  clear: none;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-left: 1px dotted #CCC;
+  height: 100%;
+  display: table-cell;
+}
+
+abbr[title], dfn[title], span[title] {
+  cursor: help;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  font-style: normal;
+}
+
+#footer {
+  text-align: right;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+table.list {
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 2px 6px;
+  font-size: 1em;
+  vertical-align: top;
+}
+
+th {
+  background: #D5D7DD;
+}
+
+caption {
+  border: 1px solid #888;
+  padding: 2px 12px;
+  font-size: 1em;
+  background: #888;
+  color: #FFF;
+  font-weight: bold;
+  text-align: left;
+}
+
+table.list tr.sub th,
+table.list th.sub {
+  background: #E5E7ED;
+}
+
+table.list th[colspan] {
+  text-align: left;
+}
+
+tr.subsub th, th.subsub {
+  color: #666;
+  background: #D5D7DD;
+  font-weight: bold;
+  text-align: left;
+}
+
+th[scope='row'] {
+  background: #E5E7ED;
+  font-weight: normal;
+  text-align: left;
+}
+
+table.list tr:nth-child(2n+1) {
+  background-color: #FAFAFA;
+}
+
+table.list tr.Obsolete {
+  text-decoration: line-through;
+  color: #999;
+}
+
+table.list tr.Duplicate {
+  color: #999;
+}
+
+table.list tr:hover td {
+  background-color: #eeb;
+}
+
+code, samp, var {
+  color: #060;
+}
+
+.fourcc {
+  color: #060;
+  font-family: monospace;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+.guid {
+  color: #600;
+  font-family: monospace;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+.media-type {
+  color: #009;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+.codec-id {
+  color: #36C;
+  font-family: monospace;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+.pixel-format-id {
+  color: #C63;
+  font-family: monospace;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+.wave-format {
+  color: #093;
+  font-family: monospace;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+.tag {
+  color: #666;
+  background-color: #DDD;
+  border: 1px solid #999 !important;
+  border-radius: 2px;
+  padding: 0 2px;
+  font-size: 0.8em;
+  font-family: sans-serif;
+  margin: 0 2px;
+}
+.tag-official {
+  color: #363;
+  background-color: #CFC;
+  border-color: #090 !important;
+}
+.tag-mf {
+  background-color: #D4E4FF;
+  border-color: #8494AF !important;
+}
+.tag-ds {
+  background-color: #E4D4FF;
+  border-color: #9484AF !important;
+}
+.tag-ks {
+  background-color: #FFD5FC;
+  border-color: #9484AF !important;
+}
+
+.tag-dxva1 {
+  background-color: #FFFFEE;
+  border-color: #BBBBAA !important;
+}
+.tag-dxva2 {
+  background-color: #EEEEDD;
+  border-color: #BBBBAA !important;
+}
+
+.tag-d3d {
+  background-color: #DDEEFF;
+  border-color: #8899AA !important;
+}
+
+.link-button {
+  float: left;
+  display: none;
+  background-color: #F8F8FF;
+  border-color: #F0F0FF;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 75%;
+  margin-top: 0;
+  margin-left: -50px;
+  padding: 4px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+address {
+  text-align: right;
+}
+
+hr {
+  margin-top: 3.5em;
+  border-width: 1px;
+  color: #fff;
+}
+
+.revision {
+  text-align: right;
+  float: right;
+}
