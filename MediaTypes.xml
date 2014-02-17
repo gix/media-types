@@ -3296,15 +3296,8 @@
         Extensions=".spx (OGG)"
         WaveFormat="0xA109 (WAVE_FORMAT_SPEEX_VOICE)"
         LavCodecId="AV_CODEC_ID_SPEEX"
-        Notes="GUID as defined by oggdsf.">
-        <Guid Id="{25A9729D-12F6-420E-BD53-1D631DC217DF}" Name="MEDIASUBTYPE_Speex" Scope="DS"/>
-      </AudioFormat>
-      <AudioFormat
-        Name="Speex"
-        Extensions=".spx (OGG)"
-        WaveFormat="0xA109 (WAVE_FORMAT_SPEEX_VOICE)"
-        LavCodecId="AV_CODEC_ID_SPEEX"
         Notes="WAVE_FORMAT-based GUID.">
+        <Guid Id="{25A9729D-12F6-420E-BD53-1D631DC217DF}" Name="MEDIASUBTYPE_Speex" Scope="DS"/>
         <Guid Id="{0000A109-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_SPEEX" Scope="DS"/>
       </AudioFormat>
     </AudioFormatGroup>
@@ -3932,7 +3925,6 @@
       <AudioFormat WaveFormat="0x2048" LavCodecId="AV_CODEC_ID_SONIC_LS"/>
       <AudioFormat LavCodecId="AV_CODEC_ID_TWINVQ"/>
       <AudioFormat LavCodecId="AV_CODEC_ID_VMDAUDIO"/>
-      <AudioFormat LavCodecId="AV_CODEC_ID_VOXWARE"/>
       <AudioFormat LavCodecId="AV_CODEC_ID_WESTWOOD_SND1"/>
     </AudioFormatGroup>
 
@@ -4051,40 +4043,40 @@
         WaveFormat="0x0063 (WAVE_FORMAT_CANOPUS_ATRAC)"
         Notes="Canopus, co., Ltd."/>
       <AudioFormat
-        WaveFormat="0x0064 (WAVE_FORMAT_G726_ADPCM)"
-        Notes="APICOM"/>
+        Name="APICOM G.726 ADPCM"
+        WaveFormat="0x0064 (WAVE_FORMAT_G726_ADPCM)"/>
       <AudioFormat
-        WaveFormat="0x0065 (WAVE_FORMAT_G722_ADPCM)"
-        Notes="APICOM"/>
+        Name="APICOM G.722 ADPCM"
+        WaveFormat="0x0065 (WAVE_FORMAT_G722_ADPCM)"/>
       <AudioFormat
-        WaveFormat="0x0066 (WAVE_FORMAT_DSAT)"
-        Notes="Microsoft Corporation"/>
+        Name="Microsoft DSAT"
+        WaveFormat="0x0066 (WAVE_FORMAT_DSAT)"/>
       <AudioFormat
-        WaveFormat="0x0067 (WAVE_FORMAT_DSAT_DISPLAY)"
-        Notes="Microsoft Corporation"/>
+        Name="Microsoft DSAT Display"
+        WaveFormat="0x0067 (WAVE_FORMAT_DSAT_DISPLAY)"/>
       <AudioFormat
+        Name="Voxware Byte Aligned (bitstream-mode codec)"
         WaveFormat="0x0069 (WAVE_FORMAT_VOXWARE_BYTE_ALIGNED)"
-        LavCodecId="AV_CODEC_ID_ADPCM_IMA_WAV"
-        Notes="Voxware Inc"/>
+        LavCodecId="AV_CODEC_ID_ADPCM_IMA_WAV"/>
       <AudioFormat
-        WaveFormat="0x0070 (WAVE_FORMAT_VOXWARE_AC8)"
-        Notes="Voxware Inc"/>
+        Name="Voxware AC8 (Lernout &amp; Hauspie CELP 4.8 kbps)"
+        WaveFormat="0x0070 (WAVE_FORMAT_VOXWARE_AC8)"/>
       <AudioFormat
-        WaveFormat="0x0071 (WAVE_FORMAT_VOXWARE_AC10)"
-        Notes="Voxware Inc"/>
+        Name="Voxware AC10 (Lernout &amp; Hauspie CBS 8kbps)"
+        WaveFormat="0x0071 (WAVE_FORMAT_VOXWARE_AC10)"/>
       <AudioFormat
-        WaveFormat="0x0072 (WAVE_FORMAT_VOXWARE_AC16)"
-        Notes="Voxware Inc"/>
+        Name="Voxware AC16 (Lernout &amp; Hauspie CBS 12kbps)"
+        WaveFormat="0x0072 (WAVE_FORMAT_VOXWARE_AC16)"/>
       <AudioFormat
-        WaveFormat="0x0073 (WAVE_FORMAT_VOXWARE_AC20)"
-        Notes="Voxware Inc"/>
+        Name="Voxware AC20 (Lernout &amp; Hauspie CBS 16kbps)"
+        WaveFormat="0x0073 (WAVE_FORMAT_VOXWARE_AC20)"/>
       <AudioFormat
-        WaveFormat="0x0074 (WAVE_FORMAT_VOXWARE_RT24)"
-        Notes="Voxware Inc"/>
+        Name="Voxware MetaVoice"
+        WaveFormat="0x0074 (WAVE_FORMAT_VOXWARE_RT24)"/>
       <AudioFormat
+        Name="Voxware MetaSound"
         WaveFormat="0x0075 (WAVE_FORMAT_VOXWARE_RT29)"
-        LavCodecId="AV_CODEC_ID_VOXWARE"
-        Notes="Voxware Inc"/>
+        LavCodecId="AV_CODEC_ID_VOXWARE"/>
       <AudioFormat
         WaveFormat="0x0076 (WAVE_FORMAT_VOXWARE_RT29HW)"
         Notes="Voxware Inc"/>
@@ -4203,9 +4195,6 @@
         WaveFormat="0x0125 (WAVE_FORMAT_SANYO_LD_ADPCM)"
         Notes="Sanyo Electric Co., Ltd."/>
       <AudioFormat
-        WaveFormat="0x0130 (WAVE_FORMAT_SIPROLAB_ACEPLNET)"
-        Notes="Sipro Lab Telecom Inc."/>
-      <AudioFormat
         WaveFormat="0x0131 (WAVE_FORMAT_SIPROLAB_ACELP4800)"
         Notes="Sipro Lab Telecom Inc."/>
       <AudioFormat
@@ -4241,9 +4230,6 @@
       <AudioFormat
         WaveFormat="0x0155 (WAVE_FORMAT_TUBGSM)"
         Notes="Ring Zero Systems, Inc."/>
-      <AudioFormat
-        WaveFormat="0x0164 (WAVE_FORMAT_WMASPDIF)"
-        Notes="Microsoft Corporation"/>
       <AudioFormat
         WaveFormat="0x0170 (WAVE_FORMAT_UNISYS_NAP_ADPCM)"
         Notes="Unisys Corp."/>
@@ -4298,9 +4284,6 @@
       <AudioFormat
         WaveFormat="0x0230 (WAVE_FORMAT_ILINK_VC)"
         Notes="I-link Worldwide"/>
-      <AudioFormat
-        WaveFormat="0x0241 (WAVE_FORMAT_ESST_AC3)"
-        Notes="ESS Technology, Inc."/>
       <AudioFormat
         WaveFormat="0x0249 (WAVE_FORMAT_GENERIC_PASSTHRU)"/>
       <AudioFormat
@@ -4902,8 +4885,8 @@
         Version=";1;2;"
         Name="H.264 variable-length decoder, no film grain technology, flash"
         LavCodecId="AV_CODEC_ID_H264">
-        <DxvaId Id="{4245F676-2BBC-4166-A0BB-54E7B849C380}" Name="(DXVA_ModeH264_VLD_NoFGT_Flash)" Version="1"/>
-        <DxvaId Id="{4245F676-2BBC-4166-A0BB-54E7B849C380}" Name="(DXVA2_ModeH264_VLD_NoFGT_Flash)" Version="2"/>
+        <DxvaId Id="{4245F676-2BBC-4166-A0BB-54E7B849C380}" Name="DXVA_ModeH264_VLD_NoFGT_Flash" Version="1"/>
+        <DxvaId Id="{4245F676-2BBC-4166-A0BB-54E7B849C380}" Name="DXVA2_ModeH264_VLD_NoFGT_Flash" Version="2"/>
       </DxvaMode>
       <DxvaMode
         Vendor="AMD Avivo">
@@ -5090,7 +5073,7 @@
   <Sources>
     <Source
       Id="doc:dxva_wmv"
-      Title="DirectX Video Acceleration Specification for Windows Media Video v8, v9 and vA Decoding (Including SMPTE 421M “VC-1Ã”)"
+      Title="DirectX Video Acceleration Specification for Windows Media Video v8, v9 and vA Decoding (Including SMPTE 421M “VC-1”)"
       Vendor="Microsoft"
       Date="2012-08-15"
       File="DXVA_WMV.pdf"/>
