@@ -306,6 +306,15 @@
       LavCodecId="AV_CODEC_ID_TARGA"/>
 
     <VideoFormat
+      Name="Base Video Format">
+      <Guid Id="{00000000-0000-0010-8000-00AA00389B71}" Name="MFVideoFormat_Base" Scope="MF" Source="Microsoft"/>
+    </VideoFormat>
+    <VideoFormat
+      Name="Base HDCP (High-bandwidth Digital Content Protection)">
+      <Guid Id="{EAC3B9D5-BD14-4237-8F1F-BAB428E49312}" Name="MFVideoFormat_Base_HDCP" Scope="MF" Source="Microsoft"/>
+    </VideoFormat>
+
+    <VideoFormat
       Name="Dirac"
       Notes="oggdsf">
       <Guid Id="{15B9B7CA-A7C0-448C-A68D-4D45A4137E38}" Name="MEDIASUBTYPE_Dirac" Scope="DS"/>
@@ -372,6 +381,10 @@
         LavCodecId="AV_CODEC_ID_H264"
         MatroskaCodecId="V_MPEG4/ISO/AVC">
         <Guid Id="{34363268-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_h264" Scope="DS" Source="Microsoft"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="H.264 (HDCP)">
+        <Guid Id="{5D0CE9DD-9817-49DA-BDFD-F5F5B98F18A6}" Name="MFVideoFormat_H264_HDCP" Scope="MF" Source="Microsoft"/>
       </VideoFormat>
       <VideoFormat
         Name="XiWave H.264"
@@ -1541,6 +1554,7 @@
         LavCodecId="AV_CODEC_ID_VP8"
         MatroskaCodecId="V_VP8">
         <Guid Id="{30385056-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_VP80" Scope="DS"/>
+        <Guid Id="{30385056-0000-0010-8000-00AA00389B71}" Name="MFVideoFormat_VP80" Scope="MF" Source="Microsoft"/>
       </VideoFormat>
       <VideoFormat
         Name="On2 TrueMotion VP9"
@@ -1548,6 +1562,7 @@
         LavCodecId="AV_CODEC_ID_VP9"
         MatroskaCodecId="V_VP9">
         <Guid Id="{30395056-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_VP90" Scope="DS"/>
+        <Guid Id="{30395056-0000-0010-8000-00AA00389B71}" Name="MFVideoFormat_VP90" Scope="MF" Source="Microsoft"/>
       </VideoFormat>
       <VideoFormat
         Name="FLV">
@@ -2461,10 +2476,6 @@
       <VideoFormat LavCodecId="AV_CODEC_ID_PAF_VIDEO"/>
     </VideoFormatGroup>
 
-    <PixelFormat
-      Name="Base Pixel Format">
-      <Guid Id="{00000000-0000-0010-8000-00AA00389B71}" Name="MFVideoFormat_Base" Scope="MF" Source="Microsoft"/>
-    </PixelFormat>
     <PixelFormatGroup Name="Uncompressed RGB Formats">
       <PixelFormat
         Name="RGB 1, palettized"
@@ -3192,6 +3203,7 @@
         LavCodecId="AV_CODEC_ID_FLAC"
         MatroskaCodecId="A_FLAC">
         <Guid Id="{0000F1AC-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_FLAC" Scope="DS"/>
+        <Guid Id="{0000F1AC-0000-0010-8000-00AA00389B71}" Name="MFAudioFormat_FLAC" Scope="MF" Source="Microsoft"/>
       </AudioFormat>
       <AudioFormat
         Name="FLAC (framed)">
@@ -3205,6 +3217,7 @@
         LavCodecId="AV_CODEC_ID_ALAC"
         MatroskaCodecId="A_ALAC">
         <Guid Id="{63616C61-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ALAC" Scope="DS"/>
+        <Guid Id="{63616C61-0000-0010-8000-00AA00389B71}" Name="MFAudioFormat_ALAC" Scope="MF" Source="Microsoft"/>
       </AudioFormat>
       <AudioFormat
         Name="WavPack 4"
@@ -3246,6 +3259,7 @@
         LavCodecId="AV_CODEC_ID_VORBIS"
         MatroskaCodecId="A_VORBIS">
         <Guid Id="{8D2FD10B-5841-4A6B-8905-588FEC1ADED9}" Name="MEDIASUBTYPE_Vorbis2" Scope="DS"/>
+        <Guid Id="{8D2FD10B-5841-4A6B-8905-588FEC1ADED9}" Name="MFAudioFormat_Vorbis" Scope="MF" Source="Microsoft"/>
       </AudioFormat>
       <AudioFormat
         Name="Vorbis"
@@ -3311,11 +3325,19 @@
         <Guid Id="{00001600-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_MPEG_ADTS_AAC" Scope="DS" Source="Microsoft"/>
       </AudioFormat>
       <AudioFormat
+        Name="Advanced Audio Coding (AAC) in Audio Data Transport Stream (ADTS) format (HDCP)">
+        <Guid Id="{DA4963A3-14D8-4DCF-92B7-193EB84363DB}" Name="MFAudioFormat_ADTS_HDCP" Scope="MF" Source="Microsoft"/>
+      </AudioFormat>
+      <AudioFormat
         Name="High-Efficiency Advanced Audio Coding (HE-AAC)"
         WaveFormat="0x1610 (WAVE_FORMAT_MPEG_HEAAC)"
         Notes="MPEG-2 AAC or MPEG-4 HE-AAC v1/v2 streams with any payload (ADTS, ADIF, LOAS/LATM, RAW). Format block includes MP4 AudioSpecificConfig()">
         <Guid Id="{00001610-0000-0010-8000-00AA00389B71}" Name="MFAudioFormat_AAC" Scope="MF" Source="Microsoft"/>
         <Guid Id="{00001610-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_MPEG_HEAAC" Scope="DS" Source="Microsoft"/>
+      </AudioFormat>
+      <AudioFormat
+        Name="High-Efficiency Advanced Audio Coding (HE-AAC) (HDCP)">
+        <Guid Id="{419BCE76-8B72-400F-ADEB-84B57D63484D}" Name="MFAudioFormat_AAC_HDCP" Scope="MF" Source="Microsoft"/>
       </AudioFormat>
       <AudioFormat
         Name="MPEG-4 audio transport stream with a synchronization layer (LOAS) and a multiplex layer (LATM)"
@@ -3416,6 +3438,10 @@
         Name="Dolby Digital (AC-3)">
         <Guid Id="{E06D802C-DB46-11CF-B4D1-00805F6CBBEA}" Name="MFAudioFormat_Dolby_AC3" Scope="MF" Source="Microsoft"/>
         <Guid Id="{E06D802C-DB46-11CF-B4D1-00805F6CBBEA}" Name="MEDIASUBTYPE_DOLBY_AC3" Scope="DS"/>
+      </AudioFormat>
+      <AudioFormat
+        Name="Dolby Digital (AC-3) (HDCP)">
+        <Guid Id="{97663A80-8FFB-4445-A6BA-792D908F497F}" Name="MFAudioFormat_Dolby_AC3_HDCP" Scope="MF" Source="Microsoft"/>
       </AudioFormat>
       <AudioFormat
         Name="Dolby AC-3 over S/PDIF"
@@ -3604,6 +3630,10 @@
 
     <AudioFormatGroup Name="Miscellaneous">
       <AudioFormat
+        Name="Base HDCP (High-bandwidth Digital Content Protection)">
+        <Guid Id="{3884B5BC-E277-43FD-983D-038AA8D9B605}" Name="MFAudioFormat_Base_HDCP" Scope="MF" Source="Microsoft"/>
+      </AudioFormat>
+      <AudioFormat
         Name="Encrypted audio data used with secure audio path."
         WaveFormat="0x0009 (WAVE_FORMAT_DRM)">
         <Guid Id="{00000009-0000-0010-8000-00AA00389B71}" Name="MFAudioFormat_DRM" Scope="MF" Source="Microsoft"/>
@@ -3617,6 +3647,7 @@
       <AudioFormat
         Name="DVD audio data">
         <Guid Id="{E06D8032-DB46-11CF-B4D1-00805F6CBBEA}" Name="MEDIASUBTYPE_DVD_LPCM_AUDIO" Scope="DS"/>
+        <Guid Id="{E06D8032-DB46-11CF-B4D1-00805F6CBBEA}" Name="MFAudioFormat_LPCM" Scope="MF" Source="Microsoft"/>
       </AudioFormat>
     </AudioFormatGroup>
 
@@ -3626,6 +3657,10 @@
         WaveFormat="0x0001 (WAVE_FORMAT_PCM)">
         <Guid Id="{00000001-0000-0010-8000-00AA00389B71}" Name="MFAudioFormat_PCM" Scope="MF" Source="Microsoft"/>
         <Guid Id="{00000001-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_PCM" Scope="DS" Source="Microsoft"/>
+      </AudioFormat>
+      <AudioFormat
+        Name="PCM (HDCP)">
+        <Guid Id="{A5E7FF01-8411-4ACC-A865-5F4941288D80}" Name="MFAudioFormat_PCM_HDCP" Scope="MF" Source="Microsoft"/>
       </AudioFormat>
       <AudioFormat
         Name="IEEE floating-point audio"
@@ -4596,7 +4631,9 @@
       Name="SubRip"
       Extension=".srt"
       LavCodecId="AV_CODEC_ID_SUBRIP"
-      MatroskaCodecId="S_TEXT/UTF8"/>
+      MatroskaCodecId="S_TEXT/UTF8">
+      <Guid Id="{5E467F2E-77CA-4CA5-8391-D142ED4B76C8}" Name="MFSubtitleFormat_SRT" Scope="MF" Source="Microsoft"/>
+    </SubtitleFormat>
     <SubtitleFormat
       Name="SubRip with embedded timing"
       Extension=".srt"
@@ -4614,6 +4651,7 @@
       LavCodecId="AV_CODEC_ID_SSA"
       MatroskaCodecId="S_TEXT/SSA;S_SSA">
       <Guid Id="{3020560F-255A-4DDC-806E-6C5CC6DCD70A}" Name="MEDIASUBTYPE_SSA" Scope="DS"/>
+      <Guid Id="{57176A1B-1A9E-4EEA-ABEF-C61760198AC4}" Name="MFSubtitleFormat_SSA" Scope="MF" Source="Microsoft"/>
     </SubtitleFormat>
     <SubtitleFormat
       Name="Advanced SubStation Alpha"
@@ -4680,6 +4718,24 @@
     <SubtitleFormat
       LavCodecId="AV_CODEC_ID_TEXT"
       MatroskaCodecId="S_TEXT/ASCII"/>
+    <SubtitleFormat
+      Name="Timed Text Markup Language (TTML)"
+      Extension=".ttml;.dfxp;.xml"
+      InternetMediaType="application/ttml+xml">
+      <Guid Id="{73E73992-9A10-4356-9557-7194E91E3E54}" Name="MFSubtitleFormat_TTML" Scope="MF" Source="Microsoft"/>
+    </SubtitleFormat>
+    <SubtitleFormat>
+      <Guid Id="{7FA7FAA3-FEAE-4E16-AEDF-36B9ACFBB099}" Name="MFSubtitleFormat_ATSC" Scope="MF" Source="Microsoft"/>
+    </SubtitleFormat>
+    <SubtitleFormat
+      Name="Web Video Text Tracks (WebVTT)"
+      InternetMediaType="text/vtt"
+      Spec="WebVTT: The Web Video Text Tracks Format">
+      <Guid Id="{C886D215-F485-40BB-8DB6-FADBC619A45D}" Name="MFSubtitleFormat_WebVTT" Scope="MF" Source="Microsoft"/>
+    </SubtitleFormat>
+    <SubtitleFormat>
+      <Guid Id="{1BB3D849-6614-4D80-8882-ED24AA82DA92}" Name="MFSubtitleFormat_CustomUserData" Scope="MF" Source="Microsoft"/>
+    </SubtitleFormat>
   </Formats>
   <Caps>
     <DxvaMode>
@@ -5114,5 +5170,10 @@
       Vendor="Microsoft"
       Date="2013-08-09"
       File="DXVA_HEVC_Spec.docx"/>
+    <Source
+      Id="doc:webvtt"
+      Title="WebVTT: The Web Video Text Tracks Format"
+      Vendor="W3C"
+      URL="http://dev.w3.org/html5/webvtt/"/>
   </Sources>
 </MediaTypes>
