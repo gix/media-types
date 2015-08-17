@@ -4587,64 +4587,22 @@
     </AudioFormatGroup>
 
     <SubtitleFormat
-      Name="AQTitle"
-      Extension=".aqt"/>
-    <SubtitleFormat
-      Name="JACOSub"
-      Extension=".jss"
-      LavCodecId="AV_CODEC_ID_JACOSUB"/>
-    <SubtitleFormat
-      Name="MicroDVD"
-      Extension=".sub"
-      LavCodecId="AV_CODEC_ID_MICRODVD"/>
-    <SubtitleFormat
-      Name="MPEG-4 Timed Text (MPEG-4 Part 17)"
-      Spec="ISO/IEC 14496-17"/>
-    <SubtitleFormat
-      Name="MPSub"
-      Extension=".sub"/>
-    <SubtitleFormat
-      Name="Ogg Kate (Karaoke And Text Encapsulation)"
-      MatroskaCodecId="S_KATE"/>
-    <SubtitleFormat
-      Name="Ogg Writ"/>
-    <SubtitleFormat
-      Name="Phoenix Subtitle"
-      Extension=".pjs"/>
-    <SubtitleFormat
-      Name="PowerDivX"
-      Extension=".psb"/>
-    <SubtitleFormat
-      Name="RealText"
-      Extension=".rt"
-      LavCodecId="AV_CODEC_ID_REALTEXT"/>
-    <SubtitleFormat
-      Name="Synchronized Accessible Media Interchange (SAMI)"
-      Extension=".smi;.sami"
-      LavCodecId="AV_CODEC_ID_SAMI"/>
-    <SubtitleFormat
-      Name="Structured Subtitle Format"
-      Extension=".ssf">
-      <Guid Id="{76C421C4-DB89-42EC-936E-A9FBC1794714}" Name="MEDIASUBTYPE_SSF" Scope="DS"/>
-    </SubtitleFormat>
-    <SubtitleFormat
       Name="SubRip"
       Extension=".srt"
-      LavCodecId="AV_CODEC_ID_SUBRIP"
+      LavCodecId="AV_CODEC_ID_SRT"
       MatroskaCodecId="S_TEXT/UTF8">
       <Guid Id="{5E467F2E-77CA-4CA5-8391-D142ED4B76C8}" Name="MFSubtitleFormat_SRT" Scope="MF" Source="Microsoft"/>
     </SubtitleFormat>
     <SubtitleFormat
-      Name="SubRip with embedded timing"
+      Name="SubRip (without timestamps)"
       Extension=".srt"
-      LavCodecId="AV_CODEC_ID_SRT"
-      MatroskaCodecId="S_TEXT/UTF8"/>
-    <SubtitleFormat
-      Name="Gloss Subtitle"/>
-    <SubtitleFormat
+      LavCodecId="AV_CODEC_ID_SUBRIP"
       MatroskaCodecId="S_TEXT/UTF8">
-      <Guid Id="{87C0B230-03A8-4FDF-8010-B27A5848200D}" Name="MEDIASUBTYPE_UTF8" Scope="DS"/>
     </SubtitleFormat>
+    <SubtitleFormat
+      Name="MicroDVD"
+      Extension=".sub"
+      LavCodecId="AV_CODEC_ID_MICRODVD"/>
     <SubtitleFormat
       Name="SubStation Alpha"
       Extension=".ssa"
@@ -4668,20 +4626,78 @@
       <Guid Id="{370689E7-B226-4F67-978D-F10BC1A9C6AE}" Name="MEDIASUBTYPE_ASS2" Scope="DS"/>
     </SubtitleFormat>
     <SubtitleFormat
-      Name="SubViewer"
-      Extension=".sub"
-      LavCodecId="AV_CODEC_ID_SUBVIEWER"/>
-    <SubtitleFormat
-      Name="Universal Subtitle Format"
-      MatroskaCodecId="S_TEXT/USF">
-      <Guid Id="{B753B29A-0A96-45BE-985F-68351D9CAB90}" Name="MEDIASUBTYPE_USF" Scope="DS"/>
-    </SubtitleFormat>
+      Name="Synchronized Accessible Media Interchange (SAMI)"
+      Extension=".smi;.sami"
+      LavCodecId="AV_CODEC_ID_SAMI"/>
     <SubtitleFormat
       Name="VobSub"
       Extension=".sub;.idx"
       MatroskaCodecId="S_VOBSUB">
       <Guid Id="{F7239E31-9599-4E43-8DD5-FBAF75CF37F1}" Name="MEDIASUBTYPE_VOBSUB" Scope="DS"/>
     </SubtitleFormat>
+    <SubtitleFormat
+      Name="Timed Text Markup Language (TTML)"
+      Extension=".ttml;.dfxp;.xml"
+      InternetMediaType="application/ttml+xml">
+      <Guid Id="{73E73992-9A10-4356-9557-7194E91E3E54}" Name="MFSubtitleFormat_TTML" Scope="MF" Source="Microsoft"/>
+    </SubtitleFormat>
+    <SubtitleFormat>
+      <Guid Id="{7FA7FAA3-FEAE-4E16-AEDF-36B9ACFBB099}" Name="MFSubtitleFormat_ATSC" Scope="MF" Source="Microsoft"/>
+    </SubtitleFormat>
+    <SubtitleFormat
+      Name="Web Video Text Tracks (WebVTT)"
+      InternetMediaType="text/vtt"
+      Spec="WebVTT: The Web Video Text Tracks Format">
+      <Guid Id="{C886D215-F485-40BB-8DB6-FADBC619A45D}" Name="MFSubtitleFormat_WebVTT" Scope="MF" Source="Microsoft"/>
+    </SubtitleFormat>
+    <SubtitleFormat
+      Name="Universal Subtitle Format"
+      MatroskaCodecId="S_TEXT/USF">
+      <Guid Id="{B753B29A-0A96-45BE-985F-68351D9CAB90}" Name="MEDIASUBTYPE_USF" Scope="DS"/>
+    </SubtitleFormat>
+    <SubtitleFormat
+      Name="AQTitle"
+      Extension=".aqt"/>
+    <SubtitleFormat
+      Name="JACOSub"
+      Extension=".jss"
+      LavCodecId="AV_CODEC_ID_JACOSUB"/>
+    <SubtitleFormat
+      Name="MPEG-4 Timed Text (MPEG-4 Part 17)"
+      Spec="ISO/IEC 14496-17"/>
+    <SubtitleFormat
+      Name="MPSub"
+      Extension=".sub"/>
+    <SubtitleFormat
+      Name="Ogg Kate (Karaoke And Text Encapsulation)"
+      MatroskaCodecId="S_KATE"/>
+    <SubtitleFormat
+      Name="Ogg Writ"/>
+    <SubtitleFormat
+      Name="Phoenix Subtitle"
+      Extension=".pjs"/>
+    <SubtitleFormat
+      Name="PowerDivX"
+      Extension=".psb"/>
+    <SubtitleFormat
+      Name="RealText"
+      Extension=".rt"
+      LavCodecId="AV_CODEC_ID_REALTEXT"/>
+    <SubtitleFormat
+      Name="Structured Subtitle Format"
+      Extension=".ssf">
+      <Guid Id="{76C421C4-DB89-42EC-936E-A9FBC1794714}" Name="MEDIASUBTYPE_SSF" Scope="DS"/>
+    </SubtitleFormat>
+    <SubtitleFormat
+      Name="Gloss Subtitle"/>
+    <SubtitleFormat
+      MatroskaCodecId="S_TEXT/UTF8">
+      <Guid Id="{87C0B230-03A8-4FDF-8010-B27A5848200D}" Name="MEDIASUBTYPE_UTF8" Scope="DS"/>
+    </SubtitleFormat>
+    <SubtitleFormat
+      Name="SubViewer"
+      Extension=".sub"
+      LavCodecId="AV_CODEC_ID_SUBVIEWER"/>
     <SubtitleFormat
       Name="Compressed VobSub"
       MatroskaCodecId="S_VOBSUB/ZLIB"
@@ -4718,21 +4734,6 @@
     <SubtitleFormat
       LavCodecId="AV_CODEC_ID_TEXT"
       MatroskaCodecId="S_TEXT/ASCII"/>
-    <SubtitleFormat
-      Name="Timed Text Markup Language (TTML)"
-      Extension=".ttml;.dfxp;.xml"
-      InternetMediaType="application/ttml+xml">
-      <Guid Id="{73E73992-9A10-4356-9557-7194E91E3E54}" Name="MFSubtitleFormat_TTML" Scope="MF" Source="Microsoft"/>
-    </SubtitleFormat>
-    <SubtitleFormat>
-      <Guid Id="{7FA7FAA3-FEAE-4E16-AEDF-36B9ACFBB099}" Name="MFSubtitleFormat_ATSC" Scope="MF" Source="Microsoft"/>
-    </SubtitleFormat>
-    <SubtitleFormat
-      Name="Web Video Text Tracks (WebVTT)"
-      InternetMediaType="text/vtt"
-      Spec="WebVTT: The Web Video Text Tracks Format">
-      <Guid Id="{C886D215-F485-40BB-8DB6-FADBC619A45D}" Name="MFSubtitleFormat_WebVTT" Scope="MF" Source="Microsoft"/>
-    </SubtitleFormat>
     <SubtitleFormat>
       <Guid Id="{1BB3D849-6614-4D80-8882-ED24AA82DA92}" Name="MFSubtitleFormat_CustomUserData" Scope="MF" Source="Microsoft"/>
     </SubtitleFormat>
