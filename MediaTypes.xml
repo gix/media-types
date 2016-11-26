@@ -1946,6 +1946,75 @@
       </VideoFormat>
     </VideoFormatGroup>
 
+    <VideoFormatGroup Name="UtVideo">
+      <VideoFormat
+        Name="UtVideo YUV420 BT.709"
+        FourCC="0x30484C55 ('ULH0')"
+        LavCodecId="AV_CODEC_ID_UTVIDEO">
+        <Guid Id="{30484C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULH0" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="UtVideo YUV422 BT.709"
+        FourCC="0x32484C55 ('ULH2')"
+        LavCodecId="AV_CODEC_ID_UTVIDEO">
+        <Guid Id="{32484C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULH2" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="UtVideo YUV444 BT.709"
+        FourCC="0x34484C55 ('ULH4')"
+        LavCodecId="AV_CODEC_ID_UTVIDEO">
+        <Guid Id="{34484C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULH4" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="UtVideo RGBA"
+        FourCC="0x41524C55 ('ULRA')"
+        LavCodecId="AV_CODEC_ID_UTVIDEO">
+        <Guid Id="{41524C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULRA" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="UtVideo RGB"
+        FourCC="0x47524C55 ('ULRG')"
+        LavCodecId="AV_CODEC_ID_UTVIDEO">
+        <Guid Id="{47524C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULRG" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="UtVideo YUV420 BT.601"
+        FourCC="0x30594C55 ('ULY0')"
+        LavCodecId="AV_CODEC_ID_UTVIDEO">
+        <Guid Id="{30594C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULY0" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="UtVideo YUV422 BT.601"
+        FourCC="0x32594C55 ('ULY2')"
+        LavCodecId="AV_CODEC_ID_UTVIDEO">
+        <Guid Id="{32594C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULY2" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="UtVideo YUV444 BT.601"
+        FourCC="0x34594C55 ('ULY4')"
+        LavCodecId="AV_CODEC_ID_UTVIDEO">
+        <Guid Id="{34594C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULY4" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="UtVideo Pro RGBA 10bit"
+        FourCC="0x41525155 ('UQRA')"
+        LavCodecId="AV_CODEC_ID_UTVIDEO">
+        <Guid Id="{41525155-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_UQRA" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="UtVideo Pro RGB 10bit"
+        FourCC="0x47525155 ('UQRG')"
+        LavCodecId="AV_CODEC_ID_UTVIDEO">
+        <Guid Id="{47525155-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_UQRG" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="UtVideo Pro YUV422 10bit"
+        FourCC="0x32595155 ('UQY2')"
+        LavCodecId="AV_CODEC_ID_UTVIDEO">
+        <Guid Id="{32595155-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_UQY2" Scope="DS"/>
+      </VideoFormat>
+    </VideoFormatGroup>
+
     <VideoFormatGroup Name="Other">
       <VideoFormat
         Name="Sorenson Vector Quantizer 1"
@@ -2266,42 +2335,7 @@
         Name="GoToMeeting Codec 4"
         FourCC="0x344D3247 ('G2M4')"
         LavCodecId="AV_CODEC_ID_G2M"/>
-      <VideoFormat
-        Name="Ut Video"
-        FourCC="0x30484C55 ('ULH0')"
-        LavCodecId="AV_CODEC_ID_UTVIDEO">
-        <Guid Id="{30484C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULH0" Scope="DS"/>
-      </VideoFormat>
-      <VideoFormat
-        Name="Ut Video"
-        FourCC="0x32484C55 ('ULH2')"
-        LavCodecId="AV_CODEC_ID_UTVIDEO">
-        <Guid Id="{32484C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULH2" Scope="DS"/>
-      </VideoFormat>
-      <VideoFormat
-        Name="Ut Video"
-        FourCC="0x41524C55 ('ULRA')"
-        LavCodecId="AV_CODEC_ID_UTVIDEO">
-        <Guid Id="{41524C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULRA" Scope="DS"/>
-      </VideoFormat>
-      <VideoFormat
-        Name="Ut Video"
-        FourCC="0x47524C55 ('ULRG')"
-        LavCodecId="AV_CODEC_ID_UTVIDEO">
-        <Guid Id="{47524C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULRG" Scope="DS"/>
-      </VideoFormat>
-      <VideoFormat
-        Name="Ut Video"
-        FourCC="0x30594C55 ('ULY0')"
-        LavCodecId="AV_CODEC_ID_UTVIDEO">
-        <Guid Id="{30594C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULY0" Scope="DS"/>
-      </VideoFormat>
-      <VideoFormat
-        Name="Ut Video"
-        FourCC="0x32594C55 ('ULY2')"
-        LavCodecId="AV_CODEC_ID_UTVIDEO">
-        <Guid Id="{32594C55-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_ULY2" Scope="DS"/>
-      </VideoFormat>
+
       <VideoFormat
         Name="VBLE"
         FourCC="0x454C4256 ('VBLE')"
