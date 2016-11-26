@@ -2238,11 +2238,14 @@
         <Guid Id="{48564646-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_FFVH" Scope="DS"/>
       </VideoFormat>
       <VideoFormat
+        Name="CineForm HD"
+        FourCC="0x44484643 ('CFHD')"
+        LavCodecId="AV_CODEC_ID_CFHD">
+        <Guid Id="{44484643-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_CFHD" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
         Name="Microsoft Camcorder Video"
         FourCC="0x49444743 ('CGDI')"/>
-      <VideoFormat
-        Name="Cineform RAW"
-        FourCC="0x44484643 ('CFHD')"/>
       <VideoFormat
         Name="Darim Vision Forward Uncompressed"
         FourCC="0x55575246 ('FRWU')"
