@@ -2856,7 +2856,7 @@
         Mode="Planar"
         BitsPerChannel="16">
         <Guid Id="{36313050-0000-0010-8000-00AA00389B71}" Name="MFVideoFormat_P016" Scope="MF" Source="Microsoft"/>
-        <Guid Id="{36313050-0000-0010-8000-00AA00389B71}" Name="MFVideoFormat_P016" Scope="DS" Source="Microsoft"/>
+        <Guid Id="{36313050-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_P016" Scope="DS" Source="Microsoft"/>
       </PixelFormat>
       <PixelFormat
         FourCC="0x30313250 ('P210')"
