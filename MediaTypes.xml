@@ -614,6 +614,11 @@
         LavCodecId="AV_CODEC_ID_H261">
         <Guid Id="{31363268-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_h261" Scope="DS"/>
       </VideoFormat>
+      <VideoFormat
+        Name="Microsoft H.261"
+        FourCC="0x3136324D ('M261')"
+        LavCodecId="AV_CODEC_ID_H261">
+      </VideoFormat>
     </VideoFormatGroup>
 
     <VideoFormatGroup Name="ITU-T H.263">
