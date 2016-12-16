@@ -314,27 +314,29 @@
       <Guid Id="{EAC3B9D5-BD14-4237-8F1F-BAB428E49312}" Name="MFVideoFormat_Base_HDCP" Scope="MF" Source="Microsoft"/>
     </VideoFormat>
 
-    <VideoFormat
-      Name="Dirac"
-      Notes="oggdsf">
-      <Guid Id="{15B9B7CA-A7C0-448C-A68D-4D45A4137E38}" Name="MEDIASUBTYPE_Dirac" Scope="DS"/>
-    </VideoFormat>
-    <VideoFormat
-      Name="Dirac">
-      <Guid Id="{A29DA00F-A22B-40EA-98DE-2F7FECADA5DE}" Name="MEDIASUBTYPE_Dirac" Scope="DS" Source="moreuuids.h (lavfilters)"/>
-    </VideoFormat>
-    <VideoFormat
-      Name="Dirac"
-      FourCC="0x64726376 ('vcrd')">
-      <Guid Id="{64726376-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_DiracVideo" Scope="DS" Source="moreuuids.h (lavfilters)"/>
-    </VideoFormat>
-    <VideoFormat
-      Name="Dirac"
-      FourCC="0x63617264 ('drac')"
-      LavCodecId="AV_CODEC_ID_DIRAC"
-      MatroskaCodecId="V_DIRAC">
-      <Guid Id="{63617264-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_DRAC" Scope="DS" Source="moreuuids.h (lavfilters)"/>
-    </VideoFormat>
+    <VideoFormatGroup Name="Dirac">
+      <VideoFormat
+        Name="Dirac"
+        Notes="oggdsf">
+        <Guid Id="{15B9B7CA-A7C0-448C-A68D-4D45A4137E38}" Name="MEDIASUBTYPE_Dirac" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="Dirac">
+        <Guid Id="{A29DA00F-A22B-40EA-98DE-2F7FECADA5DE}" Name="MEDIASUBTYPE_Dirac" Scope="DS" Source="moreuuids.h (lavfilters)"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="Dirac"
+        FourCC="0x64726376 ('vcrd')">
+        <Guid Id="{64726376-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_DiracVideo" Scope="DS" Source="moreuuids.h (lavfilters)"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="Dirac"
+        FourCC="0x63617264 ('drac')"
+        LavCodecId="AV_CODEC_ID_DIRAC"
+        MatroskaCodecId="V_DIRAC">
+        <Guid Id="{63617264-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_DRAC" Scope="DS" Source="moreuuids.h (lavfilters)"/>
+      </VideoFormat>
+    </VideoFormatGroup>
 
     <VideoFormat
       FourCC="0x4F303234 ('420O')">
