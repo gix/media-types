@@ -339,7 +339,8 @@
     </VideoFormatGroup>
 
     <VideoFormat
-      FourCC="0x4F303234 ('420O')">
+      FourCC="0x4F303234 ('420O')"
+      Notes="8-bit per channel planar YUV 4:2:0 video.">
       <Guid Id="{4F303234-0000-0010-8000-00AA00389B71}" Name="MFVideoFormat_420O" Scope="MF" Source="Microsoft"/>
       <Guid Id="{4F303234-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_420O" Scope="DS" Source="Microsoft"/>
     </VideoFormat>
