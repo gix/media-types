@@ -2097,12 +2097,14 @@
       <VideoFormat
         Name="Theora"
         FourCC="0x4F454854 ('THEO')"
+        LavCodecId="AV_CODEC_ID_THEORA"
         MatroskaCodecId="V_THEORA">
         <Guid Id="{4F454854-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_THEORA" Scope="DS"/>
       </VideoFormat>
       <VideoFormat
         Name="Theora"
         FourCC="0x6F656874 ('theo')"
+        LavCodecId="AV_CODEC_ID_THEORA"
         MatroskaCodecId="V_THEORA">
         <Guid Id="{6F656874-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_theora" Scope="DS"/>
       </VideoFormat>
@@ -3134,6 +3136,7 @@
       <PixelFormat
         Name="Cirrus Logic AccuPak"
         FourCC="0x524A4C43 ('CLJR')"
+        LavCodecId="AV_CODEC_ID_CLJR"
         Notes="reduced precision YUV">
         <Guid Id="{524A4C43-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_CLJR" Scope="DS" Source="Microsoft"/>
       </PixelFormat>
