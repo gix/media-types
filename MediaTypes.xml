@@ -2244,6 +2244,12 @@
         <Guid Id="{44484643-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_CFHD" Scope="DS"/>
       </VideoFormat>
       <VideoFormat
+        Name="MagicYUV"
+        FourCC="0x5947414D ('MAGY')"
+        LavCodecId="AV_CODEC_ID_MAGICYUV">
+        <Guid Id="{5947414D-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_MAGY" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
         Name="Microsoft Camcorder Video"
         FourCC="0x49444743 ('CGDI')"/>
       <VideoFormat
