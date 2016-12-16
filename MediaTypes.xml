@@ -2321,8 +2321,40 @@
         <Guid Id="{617A7072-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_QTRpza" Scope="DS" Source="Microsoft"/>
       </VideoFormat>
       <VideoFormat
-        Name="Sunplus JPEG (SP5X)"
+        Name="Sunplus JPEG"
+        FourCC="0x31355053 ('SP51')"
+        LavCodecId="AV_CODEC_ID_SP5X"/>
+      <VideoFormat
+        Name="Sunplus JPEG"
+        FourCC="0x32355053 ('SP52')"
+        LavCodecId="AV_CODEC_ID_SP5X"/>
+      <VideoFormat
+        Name="Sunplus JPEG"
+        FourCC="0x33355053 ('SP53')"
+        LavCodecId="AV_CODEC_ID_SP5X"/>
+      <VideoFormat
+        Name="Sunplus JPEG"
         FourCC="0x34355053 ('SP54')"
+        LavCodecId="AV_CODEC_ID_SP5X"/>
+      <VideoFormat
+        Name="Sunplus JPEG"
+        FourCC="0x35355053 ('SP55')"
+        LavCodecId="AV_CODEC_ID_SP5X"/>
+      <VideoFormat
+        Name="Sunplus JPEG"
+        FourCC="0x36355053 ('SP56')"
+        LavCodecId="AV_CODEC_ID_SP5X"/>
+      <VideoFormat
+        Name="Sunplus JPEG"
+        FourCC="0x37355053 ('SP57')"
+        LavCodecId="AV_CODEC_ID_SP5X"/>
+      <VideoFormat
+        Name="Sunplus JPEG"
+        FourCC="0x38355053 ('SP58')"
+        LavCodecId="AV_CODEC_ID_SP5X"/>
+      <VideoFormat
+        Name="Sunplus JPEG"
+        FourCC="0x58355053 ('SP5X')"
         LavCodecId="AV_CODEC_ID_SP5X"/>
       <VideoFormat
         Name="Kega Video"
