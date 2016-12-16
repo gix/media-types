@@ -2115,6 +2115,12 @@
       </VideoFormat>
       <VideoFormat
         Name="TechSmith Screen Capture Codec"
+        FourCC="0x43435354 ('TSCC')"
+        LavCodecId="AV_CODEC_ID_TSCC">
+        <Guid Id="{63637374-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_TSCC" Scope="DS"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="TechSmith Screen Capture Codec"
         FourCC="0x63637374 ('tscc')"
         LavCodecId="AV_CODEC_ID_TSCC">
         <Guid Id="{63637374-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_TSCC" Scope="DS"/>
@@ -2154,6 +2160,11 @@
       </VideoFormat>
       <VideoFormat
         Name="CVID"
+        FourCC="0x44495643 ('CVID')"
+        LavCodecId="AV_CODEC_ID_CINEPAK">
+      </VideoFormat>
+      <VideoFormat
+        Name="CVID"
         FourCC="0x64697663 ('cvid')"
         LavCodecId="AV_CODEC_ID_CINEPAK">
         <Guid Id="{64697663-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_CVID" Scope="DS"/>
@@ -2176,13 +2187,13 @@
         <Guid Id="{62706A6D-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_MJPGB" Scope="DS"/>
       </VideoFormat>
       <VideoFormat
-        Name="Smacker Video"
+        Name="Smacker Video 2"
         FourCC="0x324B4D53 ('SMK2')"
         LavCodecId="AV_CODEC_ID_SMACKVIDEO">
         <Guid Id="{324B4D53-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_SMK2" Scope="DS"/>
       </VideoFormat>
       <VideoFormat
-        Name="Smacker Video"
+        Name="Smacker Video 4"
         FourCC="0x344B4D53 ('SMK4')"
         LavCodecId="AV_CODEC_ID_SMACKVIDEO">
         <Guid Id="{344B4D53-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_SMK4" Scope="DS"/>
@@ -2489,6 +2500,11 @@
         FourCC="0x20656C72 ('rle ')"
         LavCodecId="AV_CODEC_ID_QTRLE">
         <Guid Id="{20656C72-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_QTRle" Scope="DS" Source="Microsoft"/>
+      </VideoFormat>
+      <VideoFormat
+        Name="Apple Animation (QuickTime RLE)"
+        FourCC="0x454C5251 ('QRLE')"
+        LavCodecId="AV_CODEC_ID_QTRLE">
       </VideoFormat>
       <VideoFormat
         Name="Apple Graphics (SMC)"
