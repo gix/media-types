@@ -3295,6 +3295,11 @@
         FourCC="0x32525541 ('AUR2')"
         Sampling="4:2:2"
         LavCodecId="AV_CODEC_ID_AURA2"/>
+      <PixelFormat
+        Name="Microsoft RLE8"
+        FourCC="0x38454C52 ('RLE8')"
+        LavCodecId="AV_CODEC_ID_MSRLE"
+        Notes="Run length encoded 8bpp RGB image (BI_RLE8)."/>
     </PixelFormatGroup>
 
     <AudioFormatGroup Name="Lossless">
