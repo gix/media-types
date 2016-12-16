@@ -1351,9 +1351,6 @@
         FourCC="0x3167706D ('mpg1')"
         LavCodecId="AV_CODEC_ID_MPEG1VIDEO"/>
       <VideoFormat
-        FourCC="0x3267706D ('mpg2')"
-        LavCodecId="AV_CODEC_ID_MPEG1VIDEO"/>
-      <VideoFormat
         Name="Pinnacle MPEG-1"
         FourCC="0x314D4950 ('PIM1')"
         LavCodecId="AV_CODEC_ID_MPEG1VIDEO"/>
@@ -1764,10 +1761,6 @@
       <VideoFormat
         Name="JPEG-LS custom FOURCC for avi - encoder"
         FourCC="0x534C4A4D ('MJLS')"
-        LavCodecId="AV_CODEC_ID_JPEGLS"/>
-      <VideoFormat
-        Name="Motion JPEG"
-        FourCC="0x47504A4D ('MJPG')"
         LavCodecId="AV_CODEC_ID_JPEGLS"/>
       <VideoFormat
         FourCC="0x32706A6D ('mjp2')"
