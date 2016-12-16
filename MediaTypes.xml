@@ -631,20 +631,12 @@
         <Guid Id="{33363268-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_h263" Scope="DS"/>
       </VideoFormat>
       <VideoFormat
-        Name="Xirlink H.263"
-        LavCodecId="AV_CODEC_ID_H263"/>
+        Name="H.263 / H.263-1996, H.263+ / H.263-1998 / H.263 version 2"
+        LavCodecId="AV_CODEC_ID_H263P"/>
+
       <VideoFormat
-        Name="T263"
-        LavCodecId="AV_CODEC_ID_H263"/>
-      <VideoFormat
-        Name="Lead H.263"
-        FourCC="0x3336324C ('L263')"
-        LavCodecId="AV_CODEC_ID_H263"/>
-      <VideoFormat
-        Name="Microsoft H.263"
-        LavCodecId="AV_CODEC_ID_H263"/>
-      <VideoFormat
-        Name="U263"
+        Name="Digital Equipment Corporation (DEC) H.263"
+        FourCC="0x33363244 ('D263')"
         LavCodecId="AV_CODEC_ID_H263"/>
       <VideoFormat
         Name="Intel H.263"
@@ -659,8 +651,13 @@
         <Guid Id="{33363269-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_i263" Scope="DS"/>
       </VideoFormat>
       <VideoFormat
-        Name="H.263 / H.263-1996, H.263+ / H.263-1998 / H.263 version 2"
-        LavCodecId="AV_CODEC_ID_H263P"/>
+        Name="Lead H.263"
+        FourCC="0x3336324C ('L263')"
+        LavCodecId="AV_CODEC_ID_H263"/>
+      <VideoFormat
+        Name="Microsoft H.263"
+        FourCC="0x3336324D ('M263')"
+        LavCodecId="AV_CODEC_ID_H263"/>
       <VideoFormat
         FourCC="0x33363253 ('S263')"
         LavCodecId="AV_CODEC_ID_H263">
@@ -671,6 +668,18 @@
         LavCodecId="AV_CODEC_ID_H263">
         <Guid Id="{33363273-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_s263" Scope="DS"/>
       </VideoFormat>
+      <VideoFormat
+        Name="March Networks T263"
+        FourCC="0x33363254 ('T263')"
+        LavCodecId="AV_CODEC_ID_H263"/>
+      <VideoFormat
+        Name="(Ulead?) H.263"
+        FourCC="0x33363255 ('U263')"
+        LavCodecId="AV_CODEC_ID_H263"/>
+      <VideoFormat
+        Name="Xirlink H.263"
+        FourCC="0x33363258 ('X263')"
+        LavCodecId="AV_CODEC_ID_H263"/>
       <VideoFormat
         Name="Lucent VX1000S Video"
         FourCC="0x4B315856 ('VX1K')"
