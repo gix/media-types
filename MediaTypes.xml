@@ -664,11 +664,13 @@
         FourCC="0x3336324D ('M263')"
         LavCodecId="AV_CODEC_ID_H263"/>
       <VideoFormat
+        Name="Sorenson H.263"
         FourCC="0x33363253 ('S263')"
         LavCodecId="AV_CODEC_ID_H263">
         <Guid Id="{33363253-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_S263" Scope="DS"/>
       </VideoFormat>
       <VideoFormat
+        Name="Sorenson H.263"
         FourCC="0x33363273 ('s263')"
         LavCodecId="AV_CODEC_ID_H263">
         <Guid Id="{33363273-0000-0010-8000-00AA00389B71}" Name="MEDIASUBTYPE_s263" Scope="DS"/>
